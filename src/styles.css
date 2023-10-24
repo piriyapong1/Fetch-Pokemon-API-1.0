@@ -1,0 +1,108 @@
+html {
+  font-size: 32px;
+}
+
+@media screen and (max-width: 600px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.App {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.pokemonHeaderImageContainer {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.pokemonHeaderImage {
+  max-width: 100%;
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #504965;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+/*the container must be positioned relative:*/
+.autocomplete {
+  position: relative;
+  display: inline-block;
+  width: 550px;
+}
+
+.searchInput {
+  height: 2rem;
+  font-size: 1.2rem;
+  border: 3px solid #726a8f;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.searchItemsContainer {
+  position: absolute;
+  /*position the autocomplete items to be the same width as the container:*/
+  left: 0;
+  right: 0;
+}
+
+.searchItem {
+  width: 100%;
+  padding: 0.3rem;
+  text-align: left;
+  background-color: #aaa2bf;
+  border-bottom: solid 3px #726a8f;
+  border-left: solid 3px #726a8f;
+  border-right: solid 3px #726a8f;
+  box-sizing: border-box;
+}
+
+.searchItem:hover {
+  background-color: white;
+}
+
+.fetchButton {
+  font-size: 1.2rem;
+  margin-left: 1rem;
+  background-color: #726a8f;
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  border: 3px solid #726a8f;
+}
+
+.fetchButton:hover {
+  background-color: white;
+  color: #726a8f;
+}
+
+.imgContainer {
+  width: 100px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+@media screen and (min-width: 600px) {
+  .imgContainer {
+    width: 600px;
+  }
+
+  .pokemonImg {
+    width: 200px;
+    height: 200px;
+  }
+}
